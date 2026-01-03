@@ -1,0 +1,25 @@
+/* Import 2 fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap'); /*Instrument serif*/
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /*Graduate*/
+
+* {
+    background-color: #fffefc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Instrument Serif", serif;
+
+}
+
+/* Header style*/
+nav {
+    display: flex; /* mettre les éléments sur une même ligne */
+    justify-content: space-between; /* espacer les éléments */
+}
+
+.onglets {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
