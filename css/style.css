@@ -3,12 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /*Graduate*/
 
 * {
-    background-color: #fffefc;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Instrument Serif", serif;
-
 }
 
 /* Header style*/
@@ -20,6 +18,44 @@ nav {
 .onglets {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 0px;
 }
 
+.onglet1 , .onglet2, .onglet3, .onglet4 {
+    font-size: 20px;
+
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+
+  background-color: #6c63ff;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  color: white;
+    
+}
+
+/*.onglet1 {
+    background-color: #6c63ff;
+    color: white;
+}*/
+/*.onglet2 {
+    background-color: #6c63ff;
+    color: white;
+}*/
+/*.onglet3 {
+    background-color: #6c63ff;
+    color: white;
+}*/
+/*.onglet4 {
+    background-color: #6c63ff;
+    color: white;
+}*/
+
+/* BODY STYLE*/
+body {
+    background-color: #fffefc;
+}
