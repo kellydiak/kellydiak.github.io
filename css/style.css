@@ -22,9 +22,9 @@ nav {
 }
 
 .onglet1 , .onglet2, .onglet3, .onglet4 {
-    font-size: 20px;
+font-size: 20px;
 
-display: flex;
+ display: flex;
   align-items: center;
   justify-content: center;
 
@@ -33,15 +33,15 @@ display: flex;
   font-size: 25px;
 
   background-color: #6c63ff;
-  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%); /* forme de trapèzes */
   color: white;
     
 }
 
-/*.onglet1 {
-    background-color: #6c63ff;
-    color: white;
-}*/
+.onglet1 {
+    background-color: #b9bc92;
+    color: #6f5d4f;
+}
 /*.onglet2 {
     background-color: #6c63ff;
     color: white;
