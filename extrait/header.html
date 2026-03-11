@@ -4,8 +4,8 @@
         <ol class="onglets">
             <li class="onglet1"><a href="whoami.html">whoami ?</a></li>
             <li class="onglet2"><a href="btsSio.html">BTS SIO</a></li>
-            <li class="onglet3"><a href="#">Réalisations</a>
-                <ul class="dropdown"></ul>
+            <li class="onglet3" onclick="rDeroulement()"> Réalisations
+                <ul id="dropdown"></ul>
                     <li><a href="tps.html"></a></li>
                     <li><a href="projets.html"></a></li>
                     <li><a href="stages.html"></a></li>
@@ -15,7 +15,7 @@
         </ol>
         <!-- Div logo -->
         <div class="logo">
-            <img src="#" alt="algirlthm logo">
+            <a href="index.html"><img src="img/logoAT.png" alt="algirlthm logo" height="60px" width="auto"></a>
         </div>
     </nav>
     <!-- 2e partie de la nav -->
@@ -24,4 +24,9 @@
  
 
     </div>
+    <script>
+        function rDeroulement() {
+            document.getElementById("dropdown").classList.toggle('active');
+        }
+    </script>
 </header>

@@ -54,6 +54,14 @@ font-size: 20px;
     background-color: #6c63ff;
     color: white;
 }*/
+#dropdown {
+    display: none;
+    background-color: red;
+}
+#dropdown.active {
+    display: block;
+    background-color: #6f5d4f;
+}
 
 /* BODY STYLE*/
 body {
