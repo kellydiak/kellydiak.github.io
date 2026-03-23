@@ -9,8 +9,13 @@
     font-family: "Instrument Serif", serif;
 }
 
+header {
+    padding: 0 200px; /* top n bottom, left n right*/
+}
+
 /* Header style*/
 nav {
+   
     display: flex; /* mettre les éléments sur une même ligne */
     justify-content: space-between; /* espacer les éléments */
 }
@@ -63,21 +68,45 @@ font-size: 20px;
     background-color: #6f5d4f;
 }
 
+/* body qui arrive*/
+body {
+
+    background-image:
+            radial-gradient(white 6%, transparent 7%),
+            linear-gradient(to bottom, pink, white);
+    
+        background-size:
+            40px 40px,
+            /* points */
+            100% 100%;
+        /* dégradé */
+    
+        background-repeat:
+            repeat,
+            /* points */
+            no-repeat;
+        /* dégradé */
+    
+        background-position:
+            0 0,
+            0 0;
+}
+
+
+
 /* homeBODY STYLE*/
 body.homeBODY {
     background-color: #fffefc;
 }
 
-body.whoamiBODY {
+
+
+main {
+    padding: 0 200px;
+
     
- background-image:
-  radial-gradient(#212121 8%, transparent 9%),
-  radial-gradient(#fafafa 8%, transparent 9%),
-  linear-gradient(135deg, #0f0f0f, #2a2a2a);
+}
 
-background-position: 0 0, 20px 20px, 0 0;
-background-size: 40px 40px, 40px 40px, 100% 100%;
-
-height: 200px;
-width: 100%;
+main.whoamiMAIN {
+   
 }
