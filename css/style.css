@@ -1,3 +1,4 @@
+/* note a bene : le header + footer sont inclus dans le body */
 /* Import 2 fonts */
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap'); /*Instrument serif*/
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /*Graduate*/
@@ -13,7 +14,12 @@
     --beigegrah: #FEFBD5;
 }
 
+html {
+    cursor: url('https://cdn.cursors-4u.net/previews/cute-hello-kitty-9-0d2fbc26-32.webp') 32 32, auto !important;
+}
+
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,9 +27,7 @@
     
 }
 
-header {
-    padding: 0 200px; /* top n bottom, left n right*/
-}
+
 
 /* Header style*/
 nav {
@@ -111,13 +115,24 @@ body.homeBODY {
 }
 
 
-
-main {
-    padding: 0 200px;
-
-    
+/* BTS SIO STYLE */
+body.btssioBODY {
+  padding: 0 200px; /* top n bottom, left n right*/
 }
 
-main.whoamiMAIN {
-   
+img.spirale {
+    width: 100%; /*longueur de l'image*/
+    height: 110px; /*hauteur de l'image*/
+    /*border: 2px solid black;*/
+}
+
+main.btssioMAIN {
+    
+    /*padding: 0 200px;  top n bottom, left n right*/
+    background-image: url("/img/squared_paper.jpg");
+    background-size: cover;
+    margin-top: -65px;
+    border-left: 2.5px solid var(--grisgrah2);
+    border-right: 2.5px solid var(--grisgrah2);
+    
 }
