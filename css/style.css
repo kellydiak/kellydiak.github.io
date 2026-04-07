@@ -53,28 +53,28 @@ font-size: 20px;
   height: 40px;
   font-size: 25px;
 
-  background-color: #6c63ff;
   clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%); /* forme de trapèzes */
   color: white;
     
 }
 
 .onglet1 {
-    background-color: #b9bc92;
+    background-color: var(--rosegrah);
     color: #6f5d4f;
 }
-/*.onglet2 {
-    background-color: #6c63ff;
+.onglet2 {
+    background-color: var(--browngrah);
     color: white;
-}*/
-/*.onglet3 {
-    background-color: #6c63ff;
+}
+.onglet3 {
+    background-color: var(--vertgrah);
     color: white;
-}*/
-/*.onglet4 {
-    background-color: #6c63ff;
+}
+.onglet4 {
+    background-color: var(--beigegrah);
     color: white;
-}*/
+}
+
 #dropdown {
     display: none;
     background-color: red;
@@ -93,6 +93,7 @@ body {
 
 /* homeBODY STYLE*/
 body.homeBODY {
+    padding: 0 200px; /* top n bottom, left n right*/
     background-image:
             radial-gradient(white 6%, transparent 7%),
             linear-gradient(to bottom, pink, white);
@@ -112,8 +113,21 @@ body.homeBODY {
         background-position:
             0 0,
             0 0;
+    
+    
 }
-
+.layout {
+    display: flex;
+}
+aside.gauche {
+    background-color: #fbfbfb;
+  min-height: 100vh; /* prend toute la hauteur */
+}
+.profilPhoto {
+    display: flex;
+    gap: 20px;
+    /*align-items: center;*/
+}
 
 /* BTS SIO STYLE */
 body.btssioBODY {
@@ -134,5 +148,39 @@ main.btssioMAIN {
     margin-top: -65px;
     border-left: 2.5px solid var(--grisgrah2);
     border-right: 2.5px solid var(--grisgrah2);
+    height: 200px;
+    text-align: center;
+}
+div.options {
+    display: flex;
+    height: 200px;
+
+
+}
+
+.slam {
+    background-color: var(--browngrah);
+}
+.sisr {
+    background-color: var(--beigegrah);
+}
+/* stagesSTYLE */
+.stagesBODY {
+   
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.stagesMAIN {
+   background-color: var(--vertgrah);
+    display: grid; 
+    place-items: center; /* centrer les éléments horizontalement et verticalement */
+}
+
+
+.premiere, .deuxieme {
+    display: flex;
+    gap: 20px;
     
 }
+
