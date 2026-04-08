@@ -28,7 +28,6 @@ html {
 }
 
 
-
 /* Header style*/
 nav {
    
@@ -75,14 +74,7 @@ font-size: 20px;
     color: white;
 }
 
-#dropdown {
-    display: none;
-    background-color: red;
-}
-#dropdown.active {
-    display: block;
-    background-color: #6f5d4f;
-}
+
 
 /* body qui arrive
 body {
@@ -112,23 +104,98 @@ body.homeBODY {
     
         background-position:
             0 0,
-            0 0;
-    
-    
+            0 0;    
 }
+
 .layout {
     display: flex;
+    gap: 100px;
+}
+iframe{
+    margin-top: 10px;
 }
 aside.gauche {
-    background-color: #fbfbfb;
+background-color: white;
   min-height: 100vh; /* prend toute la hauteur */
+    width: 400px; /* largeur fixe */
+    padding: 10px;
+    border-radius: 15px;
 }
 .profilPhoto {
     display: flex;
-    gap: 20px;
+    gap: 20px;;
     /*align-items: center;*/
 }
+.profilInfo{
+    margin-top: 50px;
+}
+.profilInfo h2{
+    font-size: 24px;
+    color: black;
+}
+table {
+    border-collapse: collapse;
+}
+table.Actions{
+    margin-top: 10px;
+    width: 100%;
+}
+.tableIcones {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    border-top: none;
+    
+}
+td,th {
+    border: 1px solid var(--grisgrah2);
+    padding: 10px;
+}
+table.Parcours {
+    margin-top: 20px;
+    width: 100%;
+}
 
+p.carrd {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stackBox {
+    background: white;
+    border: 2px solid #d3c0c8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.stackBox h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.icons img:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
 /* BTS SIO STYLE */
 body.btssioBODY {
   padding: 0 200px; /* top n bottom, left n right*/
@@ -164,6 +231,40 @@ div.options {
 .sisr {
     background-color: var(--beigegrah);
 }
+
+.options {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.slam, .sisr {
+    flex: 1;
+    padding: 15px;
+}
+
+.bloc {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bloc h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.bloc ul {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.bloc li {
+    margin-bottom: 5px;
+}
 /* stagesSTYLE */
 .stagesBODY {
    
@@ -184,3 +285,219 @@ div.options {
     
 }
 
+/* Veille techno STYLE */
+body.veilleTechBODY {
+    
+    padding: 0 200px; /* top n bottom, left n right*/
+    font-family: Georgia, serif;
+    background-color: #6b543c; /* fond marron */
+    color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.container p {
+    font-size: 16px;
+}
+
+/* Partie gauche */
+.main-content {
+    flex: 2.5;
+}
+
+.main-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article h3 {
+    font-family: "Graduate", serif;
+    font-size: 20px;
+    color: var(--rosegrah);
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 12px;
+    color: var(--beigegrah);
+    margin-bottom: 10px;
+}
+
+.article p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.article img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #d3c1a5;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    border: 1px solid #d3c1a5;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.sidebar p {
+border-bottom: 1px solid #d3c1a5; /* ligne de séparation en dessous du titre et texte */
+padding-bottom: 10px;
+    
+}
+
+table.VT {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.VT th,.VT td {
+    border: 1px solid var(--grisgrah);
+    padding: 8px;
+    text-align: center;
+}
+
+.VT th {
+    color : var(--browngrah);
+    font-size: 20px;
+    background-color: var(--beigegrah);
+}
+
+/* PROJETS STYLE */
+body.projetsBODY {
+    padding: 0 200px; /* top n bottom, left n right*/
+    background-image: url("/img/squared_paper.jpg");
+    background-size: cover;
+}
+
+/* CONTAINER GLOBAL */
+.veille-container {
+    display: flex;
+    gap: 2px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* ===== FEATURED STORY ===== */
+.featured-story-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #f5c6d6;
+    width: 65%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/* HEADER */
+.featured-header {
+    background: linear-gradient(to right, #ff6aa2, #ff8fc4);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CONTENT */
+.featured-content {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+.featured-main-image {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.featured-text-block {
+    flex: 1;
+}
+
+.featured-title {
+    color: #ff4f8b;
+    font-size: 18px;
+}
+
+.featured-divider {
+    margin: 10px 0;
+}
+
+.featured-description {
+    font-size: 13px;
+    color: #333;
+}
+
+.featured-cta-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: 2px solid #ff4f8b;
+    background: none;
+    color: #ff4f8b;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ===== RECENT NEWS ===== */
+.recent-news-panel {
+    width: 40%;
+    background: #e6f4fb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recent-header {
+    background: #66c1ec;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.news-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.news-item p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.news-item h4 {
+    color: var(--browngrah);
+}
+
+.news-item a {
+    color: #ff4f8b;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
