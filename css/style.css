@@ -35,6 +35,10 @@ nav {
     justify-content: space-between; /* espacer les éléments */
 }
 
+a:visited {
+    color: var(--grisgrah);
+    text-decoration: none;
+}
 .onglets {
     list-style: none;
     display: flex;
@@ -199,6 +203,25 @@ p.carrd {
 /* BTS SIO STYLE */
 body.btssioBODY {
   padding: 0 200px; /* top n bottom, left n right*/
+  background-image:
+            radial-gradient(white 6%, transparent 7%),
+            linear-gradient(to bottom, pink, white);
+    
+        background-size:
+            40px 40px,
+            /* points */
+            100% 100%;
+        /* dégradé */
+    
+        background-repeat:
+            repeat,
+            /* points */
+            no-repeat;
+        /* dégradé */
+    
+        background-position:
+            0 0,
+            0 0;    
 }
 
 img.spirale {
@@ -270,10 +293,29 @@ div.options {
    
     padding-left: 200px;
     padding-right: 200px;
+    background-image:
+            radial-gradient(white 6%, transparent 7%),
+            linear-gradient(to bottom, pink, white);
+    
+        background-size:
+            40px 40px,
+            /* points */
+            100% 100%;
+        /* dégradé */
+    
+        background-repeat:
+            repeat,
+            /* points */
+            no-repeat;
+        /* dégradé */
+    
+        background-position:
+            0 0,
+            0 0;    
 }
 
 .stagesMAIN {
-   background-color: var(--vertgrah);
+  
     display: grid; 
     place-items: center; /* centrer les éléments horizontalement et verticalement */
 }
